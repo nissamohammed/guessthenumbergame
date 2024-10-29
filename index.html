@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="guessstyle.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Guess the Number Game</h1>
+        <p class="lead">Try to guess the number between 1 and 100!</p>
+
+        <div class="input-group mb-3">
+            <input type="number" id="guessInput" class="form-control" placeholder="Enter your guess" min="1" max="100">
+            <button class="btn btn-primary" onclick="checkGuess()">Guess</button>
+        </div>
+        
+        <p id="message" class="text-muted"></p>
+        <button class="btn btn-warning mt-3" onclick="resetGame()">Restart Game</button>
+    </div>
+
+    <script src="guessgame.js"></script>
+</body>
+</html>
